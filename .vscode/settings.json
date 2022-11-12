@@ -1,0 +1,30 @@
+{
+    "cucumberautocomplete.syncfeatures": "features/**/*.feature",
+    "cucumberautocomplete.steps": [
+        "common/steps/*.py",
+        ".venv/Lib/site-packages/toolium_telefonica/behave/steps/**/*.py"
+    ],
+    "cucumberautocomplete.gherkinDefinitionPart": "@(given|when|then|step|behave_step)\\(",
+    "cucumberautocomplete.customParameters": [
+        {
+            "parameter": "(u'",
+            "value": "('"
+        }
+    ],
+    "cucumberautocomplete.strictGherkinCompletion": false,
+    "cucumberautocomplete.strictGherkinValidation": false,
+    "cucumberautocomplete.onTypeFormat": true,
+    "editor.quickSuggestions": {
+        "comments": false,
+        "strings": true,
+        "other": true
+    },
+    "python.formatting.autopep8Args": [
+        "--max-line-length=120"
+    ],
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": false,
+    "python.linting.flake8Args": [
+        "--max-line-length=120"
+    ]
+}

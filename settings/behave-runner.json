@@ -1,0 +1,24 @@
+[
+  {
+    "behave_features": [
+      "features/component/feature1/example.feature",
+      "features/component/feature2/example.feature"
+    ],
+    "behave_args": [
+      "-s",
+      "-k",
+      "--junit",
+      "--junit-directory",
+      "_output/testreport"
+    ],
+    "Jira_enabled": "false",
+    "JiraExecution_version": "",
+    "JiraExecution_Browser": "Chrome",
+    "JiraExecution_Language": "es",
+    "Server_enabled": "false",
+    "Driver_type": "",
+    "Driver_headless": "true",
+    "TestExecution_language": "es",
+    "TestExecution_environment": "qa"
+  }
+]

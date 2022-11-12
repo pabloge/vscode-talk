@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Behave",
+            "type": "python",
+            "cwd": "${workspaceRoot}",
+            "request": "launch",
+            "module": "behave",
+            "args": [
+                "-s",
+                "-k",
+                "-D",
+                "Driver_type=",
+                "-D",
+                "TestExecution_language=es",
+                "-D",
+                "Server_enabled=false",
+                "-D",
+                "TestExecution_environment=qa",
+                "features/component/feature1/example.feature"
+            ]
+        }
+    ]
+}
