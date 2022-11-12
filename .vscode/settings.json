@@ -26,5 +26,16 @@
     "python.linting.flake8Enabled": false,
     "python.linting.flake8Args": [
         "--max-line-length=120"
+    ],
+    "logViewer.watch": [
+        {
+            "groupName": "Behave",
+            "watches": [
+                {
+                    "title": "acceptance_int",
+                    "pattern": "_output/acceptance_int.log"
+                }
+            ]
+        }
     ]
 }
