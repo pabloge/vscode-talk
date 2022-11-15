@@ -1,0 +1,13 @@
+version: '3.6'
+
+services:
+  test-demo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: local/test-demo:snapshot
+    environment:
+      - GITHUB_TOKEN
+    volumes:
+      - .:/opt/app:delegated
+    working_dir: /opt/app
