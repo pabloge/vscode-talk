@@ -9,4 +9,5 @@ from toolium_telefonica.behave.steps.tools.storage import add_value_to_storage_w
 @step('I add "{value1}" to "{value2}" and store the result as "{name}"')
 def add_values_and_store_result(context, value1, value2, name):
     result = value1 + value2
+    context.logger.info(f'Result generated: {result}')
     add_value_to_storage_with_key(context, result, name)
