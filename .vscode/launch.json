@@ -22,7 +22,8 @@
                 "-D",
                 "TestExecution_environment=qa",
                 "features/component/feature1/example.feature"
-            ]
+            ],
+            "justMyCode": false
         }
     ]
 }
