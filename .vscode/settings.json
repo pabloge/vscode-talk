@@ -39,7 +39,6 @@
         }
     ],
     "gherkiner.padding.symbol": "space",
-    "gherkiner.padding.default": 4,
     "gherkiner.padding.table": 10,
     "gherkiner.formatOnSave": false,
     "gherkiner.paddings": [
@@ -74,10 +73,6 @@
         {
             "keyword": "Examples",
             "padding": 4
-        },
-        {
-            "keyword": "#",
-            "padding": 0
         }
     ]
 }
