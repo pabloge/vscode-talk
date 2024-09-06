@@ -5,23 +5,14 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Behave",
+            "name": "Python: Pytest-bdd",
             "type": "python",
             "cwd": "${workspaceRoot}",
             "request": "launch",
-            "module": "behave",
+            "module": "pytest",
             "args": [
-                "-s",
-                "-k",
-                "-D",
-                "Driver_type=",
-                "-D",
-                "TestExecution_language=es",
-                "-D",
-                "Server_enabled=false",
-                "-D",
-                "TestExecution_environment=qa",
-                "features/component/feature1/example.feature"
+                "-m",
+                "1"
             ],
             "justMyCode": false
         }

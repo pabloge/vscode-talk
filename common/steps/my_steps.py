@@ -1,13 +1,14 @@
-"""
-Copyright (c) Telefónica Digital. CDCO QA Team <qacdco@telefonica.com>
-"""
-
-from toolium_telefonica.behave.decorators import step
-from toolium_telefonica.behave.steps.tools.storage import add_value_to_storage_with_key
+from pytest_bdd import given, when, then, step, parsers
 
 
-@step('I add "{value1}" to "{value2}" and store the result as "{name}"')
-def add_values_and_store_result(context, value1, value2, name):
-    result = value1 + value2
-    context.logger.info(f'Result generated: {result}')
-    add_value_to_storage_with_key(context, result, name)
+@given(parsers.parse('the value "{expected_result:d}" is stored'), target_fixture="expected_result")
+def set_expected_result(expected_result):
+    return expected_result
+
+@when(parsers.parse('I add "{sum1:d}" to "{sum2:d}" and store the result'), target_fixture="real_result")
+def set_real_result(sum1, sum2):
+    return sum1 + sum2
+
+@then('the two values stored are equal')
+def compare_results(expected_result, real_result):
+    assert expected_result == real_result
